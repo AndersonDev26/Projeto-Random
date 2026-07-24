@@ -28,7 +28,7 @@ body{
 img{
     width: 403px;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 73px;
     
 }
@@ -88,7 +88,7 @@ h2 {
 
 
 button {
-    width: 402px;
+    width: 492px;
     height: 62px;
     position: fixed;
     border-radius: 10px;
@@ -99,7 +99,7 @@ button {
     color: #fff;
     border: none;
     margin-top: 80px;
-    margin-left: 310px;
+    margin-left: 270px;
     box-sizing: 0px 18px 40px rgba(174, 195, 70, 0.35);
     cursor: pointer;
 }
