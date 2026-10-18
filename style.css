@@ -91,12 +91,12 @@ button {
     width: 492px;
     height: 62px;
     position: fixed;
-    border-radius: 10px;
+    border-radius: 50px;
     background: #AEC346;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 50px;
     line-height: 2.5px;
-    color: #fff;
+    color: #de0404;
     border: none;
     margin-top: 80px;
     margin-left: 270px;
