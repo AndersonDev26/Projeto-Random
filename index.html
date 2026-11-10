@@ -3,50 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Sorteie um número aleatório dentro de um intervalo que você escolher.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Random</title>
+    <title>Sorteador de números</title>
 </head>
 <body>
 
-    <div class="div1">
+    <main class="div1">
 
         <section class="sec1">
-            <img src="./assets/sorteio.png" alt="Sorteio">
-
+            <img src="./assets/sorteio.png" alt="Sorteio" onerror="this.parentElement.style.display='none'">
         </section>
 
-        <h2>SORTEAR UM NÚMERO</h2>
+        <h2>Sortear um número</h2>
+        <p class="subtitle">Defina o intervalo e deixe a sorte decidir.</p>
 
         <section class="sec2">
+            <label class="field">
+                <span>De</span>
+                <input class="input-min" id="min" placeholder="1" type="number" inputmode="numeric">
+            </label>
 
-            <input class="input-min" placeholder="entre" type="number">
-            <input class="input-max" placeholder="e" type="number">
-            <button onclick="generatenumber()">Sortear</button>
+            <label class="field">
+                <span>Até</span>
+                <input class="input-max" id="max" placeholder="100" type="number" inputmode="numeric">
+            </label>
 
-           
+            <button id="btn-sortear" type="button" onclick="generatenumber()">Sortear</button>
         </section>
 
-    </div>
+        <section class="result" aria-live="polite">
+            <p class="result-label" id="result-label">Seu número aparece aqui</p>
+            <p class="result-number" id="result-number">?</p>
+            <p class="error" id="error" role="alert"></p>
+        </section>
 
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
